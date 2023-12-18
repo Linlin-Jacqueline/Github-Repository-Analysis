@@ -8,7 +8,7 @@ from scipy.optimize import curve_fit
 
 # Function to load data
 def load_data():
-    github_dataset = pd.read_csv('/Users/linlinli/Documents/jobs/streamlit/github_dataset.csv')
+    github_dataset = pd.read_csv('github_dataset.csv')
     # Remove '_count' suffix from columns
     github_dataset.columns = github_dataset.columns.str.replace('_count', '')
     github_dataset.drop_duplicates(inplace=True)  # Drop duplicate rows
