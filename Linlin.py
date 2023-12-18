@@ -98,17 +98,16 @@ def plot_language_rank(github_dataset):
 # Function to plot the distribution of stars
 def plot_stars_distribution(github_dataset):
     st.subheader('Stars Distribution in GitHub Repositories')
-    plt.figure(figsize=(10, 6))
-
-    # Remove the option setting for mode.use_inf_as_null
-    # with pd.option_context('mode.use_inf_as_null', True):
-
-    sns.histplot(github_dataset['stars'], bins=30, kde=True)
-    plt.title('Distribution of Stars Count in GitHub Repositories')
-    plt.xlabel('Stars Count')
-    plt.ylabel('Frequency')
-    plt.grid(True)
-    st.pyplot()
+    
+    # 设置 pandas 默认选项
+    with pd.option_context('mode.use_inf_as_null', True):
+        plt.figure(figsize=(10, 6))
+        sns.histplot(github_dataset['stars'], bins=30, kde=True)
+        plt.title('Distribution of Stars Count in GitHub Repositories')
+        plt.xlabel('Stars Count')
+        plt.ylabel('Frequency')
+        plt.grid(True)
+        st.pyplot()
     
     # Description
     st.write("""
