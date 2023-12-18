@@ -98,16 +98,16 @@ def plot_language_rank(github_dataset):
 # Function to plot the distribution of stars
 def plot_stars_distribution(github_dataset):
    st.subheader('Stars Distribution in GitHub Repositories')
-    plt.figure(figsize=(10, 6))
-    sns.histplot(github_dataset['stars'], bins=30, kde=True)
-    plt.title('Distribution of Stars Count in GitHub Repositories')
-    plt.xlabel('Stars Count')
-    plt.ylabel('Frequency')
-    plt.grid(True)
-    st.pyplot()
+   plt.figure(figsize=(10, 6))
+   sns.histplot(github_dataset['stars'], bins=30, kde=True)
+   plt.title('Distribution of Stars Count in GitHub Repositories')
+   plt.xlabel('Stars Count')
+   plt.ylabel('Frequency')
+   plt.grid(True)
+   st.pyplot()
     
     # Description
-    st.write("""
+   st.write("""
     This histogram illustrates the distribution of stars count across GitHub repositories. 
     
     Upon examining the distribution, it's evident that the majority of repositories fall within the range of 0 to 50 stars, 
