@@ -1,4 +1,4 @@
-GitHub Repositories Analysis
+##GitHub Repositories Analysis
 
 ## Overview
 This Streamlit application provides an interactive analysis of GitHub repositories, offering insights into repository activity, contributor distribution, and feature correlations. The app visualizes key metrics such as stars, forks, issues, pull requests, contributors, and programming languages used in GitHub repositories.
