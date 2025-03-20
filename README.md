@@ -59,9 +59,8 @@ The dataset `github_dataset.csv` should contain columns such as:
 Ensure the dataset is properly formatted to avoid issues while loading.
 
 ## Contact
-- **Author**: Linlin Li
+- **Author**: Jacqueline Li
 - **Email**: jacquelinlin7@outlook.com
 
-## License
-This project is open-source and available under the MIT License.
+
 
